@@ -36,7 +36,6 @@ console.log(state)
 
 return (
     <div>
-        <h1>RECIPE ORGANZIER</h1>
 
         {/* INPUT NAME */}
         <form onSubmit={submitForm} className='form'>

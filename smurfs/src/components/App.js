@@ -1,14 +1,17 @@
 import React, { Component } from "react";
+import { Route } from "react-router-dom";
+
 import "./App.css";
+
+import Navbar from './Navbar';
 
 import SmurfCard from './SmurfCard';
 import SmurfForm from './SmurfForm';
 
 import RecipeTest from './RecipeTest';
+import Test2 from './Test2';
 
-import Navbar from './Navbar';
 
-import { Route } from "react-router-dom";
 
 
 class App extends Component {
@@ -22,7 +25,10 @@ class App extends Component {
         <Route exact path="/" component={RecipeTest}/>
         
         <Route path="/smurfs" component={SmurfForm}/>
-        <Route path="/smurfs" component={SmurfCard}/>
+        <Route path="/smurfs" component={SmurfCard }/>
+
+        <Route path="/test" component={Test2}/>
+        
 
         {/* <div className='FormContainer'>
         <SmurfForm/>

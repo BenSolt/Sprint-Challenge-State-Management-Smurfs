@@ -54,8 +54,15 @@ handleRemove = index => {
     this.setState({ RecipeList });
   };
 
+// deleteActionItemFromState = index => () => {
+//     props.deleteActionItemFromState(index);
+//   };
 
-
+deleteActionItemFromState = index => {
+    const ActionItemsList = [...this.state.ActionItemsList];
+    ActionItemsList.splice(index, 1);
+    this.setState({ ActionItemsList });
+  };
 
 
 
