@@ -7,6 +7,7 @@ import { smurfReducer } from "../store/reducers"
 import { addSmurfs } from '../store/actions';
 
 
+
 const SmurfForm = props => {
     const [state, dispatch] = useReducer(smurfReducer);
 
@@ -35,12 +36,12 @@ console.log(state)
 
 return (
     <div>
-        <h1>Add a Smurf</h1>
+        <h1>RECIPE ORGANZIER</h1>
 
         {/* INPUT NAME */}
         <form onSubmit={submitForm} className='form'>
         <input
-        className='input'
+        className='Input'
         type="text"
         name= "name"
         value={smurf.name}
@@ -51,7 +52,7 @@ return (
 
          {/* INPUT AGE */}
         <input
-        className='input'
+        className='Input'
         type="text"
         name= "age"
         value={smurf.age}
@@ -61,7 +62,7 @@ return (
 
         {/* INPUT Height */}
         <input
-        className='input'
+        className='Input'
         type="text"
         name= "height"
         value={smurf.height}
@@ -71,7 +72,7 @@ return (
 
 
         <button
-            className="Btn" 
+            className="BtnAddRecipe" 
             onClick={addSmurfs}>
         Add Smurf
         </button> 

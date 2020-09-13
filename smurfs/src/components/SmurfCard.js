@@ -4,6 +4,9 @@ import axios from 'axios';
 
 import {getSmurfs} from '../store/actions';
 
+import { addSmurfs } from '../store/actions';
+
+
 class SmurfCard extends React.Component {
     constructor(props){
         super(props)
@@ -28,28 +31,57 @@ class SmurfCard extends React.Component {
     axios
     .get('http://localhost:3333/smurfs')
     .then(res => this.setState ({smurfsAdd: res.data}))
-    console.log('comp did update')
-
+    // console.log('comp did update')
 }
 
 if(fetchingSmurfs){
     return<h2>Fetching your smurfs, hold on...</h2>
 }
 
+// handleRemove = e => {
+//     let todosRemove = [...recipes];
+//     todosRemove.map((ele, i) => {
+//       return ele.index === e ? todosRemove.splice(i, 1) : null;
+//     });
+//     setRecipes(todosRemove);
+//   };
+
+
+handleRemove = index => {
+    console.log('delete')
+    const RecipeList = [...this.state.smurfsAdd];
+    RecipeList.splice(index, 1);
+    this.setState({ RecipeList });
+  };
+
+
+
+
+
+
 render() {
-    console.log('state', this.state)
+    // console.log('state', this.state)
     return(
 
-        <div>
+        <div >
             <h1>SMURF</h1>
 
 
-            {this.state.smurfsAdd.map(smurf => {
+            {this.state.smurfsAdd.map(r => {
                 return(
-                    <div className='smurfcard'>
-                        <h3 className='text'>Name: {smurf.name}</h3>
-                        <h3 className='text'>AGE: {smurf.age}  </h3>
-                        <h3 className='text'>HEIGHT: {smurf.height} </h3>
+                    <div className='RecipeCard'>
+                        <h3 className='text'>Name: {r.name}</h3>
+                        <h3 className='text'>AGE: {r.age}  </h3>
+                        <h3 className='text'>HEIGHT: {r.height} </h3>
+
+                        <button
+                            // value={r.index}
+                            // onClick={value => this.state.handleRemove(r.index)}
+                            onClick={this.handleRemove}
+                            className="BtnDeleteRecipe"
+                        >
+                        <b>Delete Recipe</b>
+                        </button>
                     </div>  
                 )
             })}

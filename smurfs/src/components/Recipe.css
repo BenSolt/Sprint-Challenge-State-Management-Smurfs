@@ -1,0 +1,134 @@
+.App{
+    /* background: lightblue; */
+    border: 2px solid black;
+    margin: 5%;  
+}
+
+.Navbar{
+    font-size: 1.2rem;
+    text-align: center; 
+    background: gray;
+    padding: 15px;
+}
+
+.NavbarSearch{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Top{
+    display: flex; 
+    margin: 3%;
+    justify-content: space-evenly;
+}
+
+.navlink{
+    margin: 1%;
+}
+ 
+
+/* Search Bar */
+.Searchbar{
+    /* text-align: center;  */
+    margin-bottom: 2%;
+}
+
+
+.RecipeFormHolder{
+    /* justify-content: center; */
+    width: 40%;
+    background: lightblue;
+    border: 2px solid black;
+}
+
+.RecipeForm{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+  
+.RecipeHolder{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+    /* width: 40%; */
+    /* border: 5px solid black; */
+}
+
+.RecipeCard{
+    width: 45%;
+    text-align: center; 
+    margin: 2%;
+    border: 2px solid black;
+    background: rgb(184, 184, 184);
+}
+
+
+
+.Input{
+    padding: 12px;
+    margin: 15px 20px 0 20px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+
+}
+
+
+.todo {
+    text-align: center;
+    margin: 10px 0;
+    padding: 1px;
+    cursor: pointer;
+    background-color: gray;
+    border: 2px solid black;
+}
+  
+.todopurchased  {
+    background-color: red;
+    /* width: 80%; */
+    text-align: center;
+    margin: 10px 0;
+    padding: 1px;
+    text-decoration: line-through;
+    border: 2px solid black;
+    }
+  
+.BtnDeleteRecipe{
+    padding: 12px;
+    margin: 10px;
+    background: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/* Button add Recipe */
+.BtnAddRecipe{
+    padding: 12px;
+    margin: 12px 20px 12px 20px;
+    background: rgb(30, 255, 0);
+    font-weight: bold;
+}
+
+/* SEARCH EXAMPLE PAGE */
+.SearchCard{
+    /* width: 45%; */
+    text-align: center; 
+    margin: 2%;
+    padding: 12px;
+    border: 2px solid black;
+    /* background: rgb(184, 184, 184); */
+}
+
+
+
+/* TODO APP */
+.App2{
+    margin: 2%;
+}
+
+.mainBox2{
+    text-align: center; 
+    border: 2px solid black;
+    margin: 0 12% 0% 12%;
+}
