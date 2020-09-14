@@ -35,6 +35,7 @@ class Test2 extends React.Component {
     ActionItemsList.splice(index, 1);
     this.setState({ ActionItemsList });
   };
+  
   render() {
     return (
       <div>
@@ -91,7 +92,7 @@ class ActionItemForum extends React.Component {
       <div>
         <form onSubmit={this.handleSubmission}>
           <div className="form-group">
-            <label for="title">Title:</label>
+            {/* <label for="title">Title:</label> */}
             <input
               type="text"
               className="Input"
@@ -103,7 +104,7 @@ class ActionItemForum extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label for="dueDate">Due Date:</label>
+            {/* <label for="dueDate">Due Date:</label> */}
             <input
               type="Date"
               className="Input"
@@ -116,7 +117,7 @@ class ActionItemForum extends React.Component {
           </div>
 
           <div className="form-group">
-            <label for="dueDate">Due Date:</label>
+            {/* <label for="dueDate">Due Date:</label> */}
             <input
               type="text"
               className="Input"

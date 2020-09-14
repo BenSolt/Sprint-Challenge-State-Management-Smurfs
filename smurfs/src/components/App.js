@@ -11,6 +11,8 @@ import SmurfForm from './SmurfForm';
 import RecipeTest from './RecipeTest';
 import Test2 from './Test2';
 
+import ReactHook from './reactexample/ReactHook';
+
 
 
 
@@ -28,7 +30,8 @@ class App extends Component {
         <Route path="/smurfs" component={SmurfCard }/>
 
         <Route path="/test" component={Test2}/>
-        
+
+        <Route path="/reacthook" component={ReactHook}/>
 
         {/* <div className='FormContainer'>
         <SmurfForm/>

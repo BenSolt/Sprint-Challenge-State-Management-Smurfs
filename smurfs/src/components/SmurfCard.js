@@ -58,12 +58,11 @@ handleRemove = index => {
 //     props.deleteActionItemFromState(index);
 //   };
 
-deleteActionItemFromState = index => {
-    const ActionItemsList = [...this.state.ActionItemsList];
-    ActionItemsList.splice(index, 1);
-    this.setState({ ActionItemsList });
-  };
-
+// deleteActionItemFromState = index => {
+//     const ActionItemsList = [...this.state.ActionItemsList];
+//     ActionItemsList.splice(index, 1);
+//     this.setState({ ActionItemsList });
+//   };
 
 
 render() {
@@ -77,6 +76,7 @@ render() {
             {this.state.smurfsAdd.map(r => {
                 return(
                     <div className='RecipeCard'>
+                       {/* value={e.index} */}
                         <h3 className='text'>Name: {r.name}</h3>
                         <h3 className='text'>AGE: {r.age}  </h3>
                         <h3 className='text'>HEIGHT: {r.height} </h3>
